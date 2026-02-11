@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import dotsealogo from "@/assets/dotsea-logo.png";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -28,8 +29,8 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 glass-card border-b border-border/30 backdrop-blur-2xl"
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
-        <button onClick={() => scrollTo("#home")} className="text-2xl font-display font-bold text-gradient">
-          Dotsea
+        <button onClick={() => scrollTo("#home")} className="flex items-center">
+          <img src={dotsealogo} alt="Dotsea" className="h-8" />
         </button>
 
         {/* Desktop */}

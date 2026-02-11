@@ -1,4 +1,5 @@
 import { Github, Linkedin, Twitter, Instagram } from "lucide-react";
+import dotsealogo from "@/assets/dotsea-logo.png";
 
 const links = ["Home", "Services", "About", "Portfolio", "Contact"];
 
@@ -13,7 +14,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
-            <p className="text-2xl font-display font-bold text-gradient mb-2">Dotsea</p>
+            <img src={dotsealogo} alt="Dotsea" className="h-8 mb-2" />
             <p className="text-xs text-muted-foreground">Crafting Intelligent Digital Futures</p>
           </div>
 
